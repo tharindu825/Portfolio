@@ -2,7 +2,10 @@
 node_modules/
 dist/
 
-
+# Environment variables — NEVER commit secrets
+.env
+.env.local
+.env.production
 
 # Database
 database.sqlite
@@ -10,3 +13,14 @@ uploads/
 
 # TS config build info
 *.tsbuildinfo
+
+# Logs
+*.log
+email-errors.log
+
+# Temp/debug files
+data_output.txt
+check_data.ts
+clear_media.ts
+fix_media_data.ts
+runner.js

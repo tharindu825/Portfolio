@@ -22,6 +22,7 @@ export class Education {
 
     @Column({ type: "text", nullable: true })
     description: string;
+
     @Column("text", { nullable: true })
     logoUrl: string;
 }
