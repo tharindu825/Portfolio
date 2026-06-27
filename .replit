@@ -1,0 +1,8 @@
+run = "npm start"
+entrypoint = "server/src/index.ts"
+
+[languages.javascript]
+manager = "npm"
+
+[deployment]
+run = "npm start"

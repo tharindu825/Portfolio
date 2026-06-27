@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "client/package.json",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "dist"
+            }
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/assets/(.*)",
+            "destination": "/client/dist/assets/$1"
+        },
+        {
+            "source": "/vite.svg",
+            "destination": "/client/dist/vite.svg"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/client/dist/index.html"
+        }
+    ]
+}

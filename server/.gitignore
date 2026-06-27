@@ -1,0 +1,12 @@
+# Node dependencies
+node_modules/
+dist/
+
+
+
+# Database
+database.sqlite
+uploads/
+
+# TS config build info
+*.tsbuildinfo
