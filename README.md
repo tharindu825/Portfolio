@@ -1,4 +1,4 @@
-# Sushmitha's Dynamic Portfolio 🚀
+# Dynamic Portfolio 🚀
 
 ### A premium, full-stack, and interactive personal website featuring a state-of-the-art admin dashboard.
 
