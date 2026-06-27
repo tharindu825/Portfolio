@@ -113,7 +113,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onExpand, isAdmin, o
                     </Typography>
 
                     <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap sx={{ mb: 3 }}>
-                        {project.techStack.map((tech) => (
+                        {(project.techStack || []).map((tech) => (
                             <Chip
                                 key={tech}
                                 label={tech}

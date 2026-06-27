@@ -305,7 +305,7 @@ const Skills: React.FC<{ isAdmin?: boolean }> = ({ isAdmin }) => {
                                                 '&::-webkit-scrollbar-thumb': { background: alpha(theme.palette.primary.main, 0.2), borderRadius: 10 }
                                             }}>
                                                 <Stack direction="row" spacing={1.5} flexWrap="wrap" useFlexGap>
-                                                    {section.skills.map((skill, skIdx) => (
+                                                    {(section.skills || []).map((skill, skIdx) => (
                                                         <Chip
                                                             key={skIdx}
                                                             label={skill}

@@ -768,7 +768,7 @@ const ProjectDetailsDialog: React.FC<{ project: ProjectType | null, onClose: () 
                                             borderRadius: '50px',
                                             backdropFilter: 'blur(5px)'
                                         }}>
-                                            {project.media.map((_, i) => (
+                                            {(project.media || []).map((_, i) => (
                                                 <Box
                                                     key={i}
                                                     onClick={() => setCurrentMediaIndex(i)}
