@@ -143,7 +143,6 @@ const ProjectForm: React.FC<ProjectFormProps> = ({ open, onClose, onSubmit, proj
                                 name="name"
                                 value={formData.name || ''}
                                 onChange={handleInputChange}
-                                required
                             />
                         </Grid>
                         <Grid size={{ xs: 12, sm: 6 }}>
@@ -154,7 +153,6 @@ const ProjectForm: React.FC<ProjectFormProps> = ({ open, onClose, onSubmit, proj
                                 name="status"
                                 value={formData.status || 'Ongoing'}
                                 onChange={handleInputChange}
-                                required
                             >
                                 <MenuItem value="Ongoing">Ongoing</MenuItem>
                                 <MenuItem value="Completed">Completed</MenuItem>
@@ -169,7 +167,6 @@ const ProjectForm: React.FC<ProjectFormProps> = ({ open, onClose, onSubmit, proj
                                 onChange={handleInputChange}
                                 multiline
                                 rows={2}
-                                required
                             />
                         </Grid>
                         <Grid size={12}>

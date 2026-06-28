@@ -91,7 +91,6 @@ const EducationForm: React.FC<EducationFormProps> = ({ open, onClose, onSubmit, 
                                 name="institution"
                                 value={formData.institution || ''}
                                 onChange={handleInputChange}
-                                required
                             />
                         </Grid>
                         <Grid size={{ xs: 12, sm: 6 }}>
@@ -101,7 +100,6 @@ const EducationForm: React.FC<EducationFormProps> = ({ open, onClose, onSubmit, 
                                 name="degree"
                                 value={formData.degree || ''}
                                 onChange={handleInputChange}
-                                required
                             />
                         </Grid>
                         <Grid size={{ xs: 12, sm: 6 }}>
@@ -111,7 +109,6 @@ const EducationForm: React.FC<EducationFormProps> = ({ open, onClose, onSubmit, 
                                 name="fieldOfStudy"
                                 value={formData.fieldOfStudy || ''}
                                 onChange={handleInputChange}
-                                required
                             />
                         </Grid>
                         <Grid size={{ xs: 12, sm: 6 }}>
@@ -122,7 +119,6 @@ const EducationForm: React.FC<EducationFormProps> = ({ open, onClose, onSubmit, 
                                 value={formData.startDate || ''}
                                 onChange={handleInputChange}
                                 placeholder="e.g. 2018"
-                                required
                             />
                         </Grid>
                         <Grid size={{ xs: 12, sm: 6 }}>
@@ -133,7 +129,6 @@ const EducationForm: React.FC<EducationFormProps> = ({ open, onClose, onSubmit, 
                                 value={formData.endDate || ''}
                                 onChange={handleInputChange}
                                 placeholder="e.g. 2022"
-                                required
                             />
                         </Grid>
                         <Grid size={12}>

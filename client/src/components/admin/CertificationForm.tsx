@@ -141,7 +141,6 @@ const CertificationForm: React.FC<CertificationFormProps> = ({ open, onClose, on
                                 name="name"
                                 value={formData.name || ''}
                                 onChange={handleInputChange}
-                                required
                             />
                         </Grid>
                         <Grid size={12}>
@@ -151,7 +150,6 @@ const CertificationForm: React.FC<CertificationFormProps> = ({ open, onClose, on
                                 name="issuingOrganization"
                                 value={formData.issuingOrganization || ''}
                                 onChange={handleInputChange}
-                                required
                             />
                         </Grid>
                         <Grid size={{ xs: 12, sm: 6 }}>
@@ -162,7 +160,6 @@ const CertificationForm: React.FC<CertificationFormProps> = ({ open, onClose, on
                                 value={formData.issueDate || ''}
                                 onChange={handleInputChange}
                                 placeholder="MM/YYYY"
-                                required
                             />
                         </Grid>
                         <Grid size={{ xs: 12, sm: 6 }}>

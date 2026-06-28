@@ -138,7 +138,6 @@ const AchievementForm: React.FC<AchievementFormProps> = ({ open, onClose, onSubm
                                 name="title"
                                 value={formData.title || ''}
                                 onChange={handleInputChange}
-                                required
                             />
                         </Grid>
                         <Grid size={12}>
@@ -148,7 +147,6 @@ const AchievementForm: React.FC<AchievementFormProps> = ({ open, onClose, onSubm
                                 name="issuer"
                                 value={formData.issuer || ''}
                                 onChange={handleInputChange}
-                                required
                             />
                         </Grid>
                         <Grid size={12}>
@@ -159,7 +157,6 @@ const AchievementForm: React.FC<AchievementFormProps> = ({ open, onClose, onSubm
                                 value={formData.date || ''}
                                 onChange={handleInputChange}
                                 placeholder="MM/YYYY"
-                                required
                             />
                         </Grid>
                         <Grid size={12}>
@@ -171,7 +168,6 @@ const AchievementForm: React.FC<AchievementFormProps> = ({ open, onClose, onSubm
                                 onChange={handleInputChange}
                                 multiline
                                 rows={4}
-                                required
                             />
                         </Grid>
                     </Grid>

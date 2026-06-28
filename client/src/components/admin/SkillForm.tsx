@@ -106,7 +106,6 @@ const SkillForm: React.FC<SkillFormProps> = ({ open, onClose, onSubmit, initialD
                             <TextField
                                 label="Category Title"
                                 fullWidth
-                                required
                                 value={title}
                                 onChange={(e) => setTitle(e.target.value)}
                                 placeholder="e.g. Frontend Development"

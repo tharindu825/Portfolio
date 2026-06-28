@@ -182,7 +182,6 @@ const ConfigForm: React.FC<ConfigFormProps> = ({ open, onClose }) => {
                                 name="SMTP_PASS"
                                 value={config.SMTP_PASS}
                                 onChange={handleChange}
-                                required
                                 autoFocus
                                 helperText="Go to Google Account Security > App Passwords"
                                 slotProps={{

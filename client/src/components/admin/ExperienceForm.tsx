@@ -92,7 +92,6 @@ const ExperienceForm: React.FC<ExperienceFormProps> = ({ open, onClose, onSubmit
                                 name="companyName"
                                 value={formData.companyName || ''}
                                 onChange={handleInputChange}
-                                required
                             />
                         </Grid>
                         <Grid size={12}>
@@ -102,7 +101,6 @@ const ExperienceForm: React.FC<ExperienceFormProps> = ({ open, onClose, onSubmit
                                 name="role"
                                 value={formData.role || ''}
                                 onChange={handleInputChange}
-                                required
                             />
                         </Grid>
                         <Grid size={{ xs: 12, sm: 6 }}>
@@ -112,7 +110,6 @@ const ExperienceForm: React.FC<ExperienceFormProps> = ({ open, onClose, onSubmit
                                 name="startDate"
                                 value={formData.startDate || ''}
                                 onChange={handleInputChange}
-                                required
                             />
                         </Grid>
                         <Grid size={{ xs: 12, sm: 6 }}>
@@ -122,7 +119,6 @@ const ExperienceForm: React.FC<ExperienceFormProps> = ({ open, onClose, onSubmit
                                 name="endDate"
                                 value={formData.endDate || ''}
                                 onChange={handleInputChange}
-                                required
                             />
                         </Grid>
                         <Grid size={12}>
@@ -134,7 +130,6 @@ const ExperienceForm: React.FC<ExperienceFormProps> = ({ open, onClose, onSubmit
                                 onChange={handleInputChange}
                                 multiline
                                 rows={2}
-                                required
                             />
                         </Grid>
                         <Grid size={12}>

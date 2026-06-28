@@ -151,10 +151,10 @@ const AboutForm: React.FC<AboutFormProps> = ({ open, onClose, onSubmit, about })
                             </Box>
                             <Grid container spacing={3}>
                                 <Grid size={{ xs: 12, md: 6 }}>
-                                    <TextField fullWidth label="Full Name" name="heroTitle" value={formData.heroTitle || ''} onChange={handleInputChange} required />
+                                    <TextField fullWidth label="Full Name" name="heroTitle" value={formData.heroTitle || ''} onChange={handleInputChange} />
                                 </Grid>
                                 <Grid size={{ xs: 12, md: 6 }}>
-                                    <TextField fullWidth label="Main Role / Headline" name="headline" value={formData.headline || ''} onChange={handleInputChange} required />
+                                    <TextField fullWidth label="Main Role / Headline" name="headline" value={formData.headline || ''} onChange={handleInputChange} />
                                 </Grid>
 
                                 <Grid size={12}>
@@ -167,10 +167,10 @@ const AboutForm: React.FC<AboutFormProps> = ({ open, onClose, onSubmit, about })
                                 </Grid>
 
                                 <Grid size={12}>
-                                    <TextField fullWidth label="Hero Headline Description" name="heroDescription" value={formData.heroDescription || ''} onChange={handleInputChange} multiline rows={2} required placeholder="This appears next to your name in the Hero section..." />
+                                    <TextField fullWidth label="Hero Headline Description" name="heroDescription" value={formData.heroDescription || ''} onChange={handleInputChange} multiline rows={2} placeholder="This appears next to your name in the Hero section..." />
                                 </Grid>
                                 <Grid size={12}>
-                                    <TextField fullWidth label="Hero Long Subtitle" name="heroSubtitle" value={formData.heroSubtitle || ''} onChange={handleInputChange} multiline rows={2} required />
+                                    <TextField fullWidth label="Hero Long Subtitle" name="heroSubtitle" value={formData.heroSubtitle || ''} onChange={handleInputChange} multiline rows={2} />
                                 </Grid>
                                 <Grid size={{ xs: 12, md: 6 }}>
                                     <TextField fullWidth label="Availability Status" name="availabilityText" value={formData.availabilityText || ''} onChange={handleInputChange} />
@@ -193,13 +193,13 @@ const AboutForm: React.FC<AboutFormProps> = ({ open, onClose, onSubmit, about })
                             </Box>
                             <Grid container spacing={3}>
                                 <Grid size={{ xs: 12, md: 6 }}>
-                                    <TextField fullWidth label="Email" name="email" value={formData.email || ''} onChange={handleInputChange} required />
+                                    <TextField fullWidth label="Email" name="email" value={formData.email || ''} onChange={handleInputChange} />
                                 </Grid>
                                 <Grid size={{ xs: 12, md: 6 }}>
-                                    <TextField fullWidth label="Phone" name="phone" value={formData.phone || ''} onChange={handleInputChange} required />
+                                    <TextField fullWidth label="Phone" name="phone" value={formData.phone || ''} onChange={handleInputChange} />
                                 </Grid>
                                 <Grid size={{ xs: 12, md: 6 }}>
-                                    <TextField fullWidth label="Location" name="location" value={formData.location || ''} onChange={handleInputChange} required />
+                                    <TextField fullWidth label="Location" name="location" value={formData.location || ''} onChange={handleInputChange} />
                                 </Grid>
                                 <Grid size={{ xs: 12, md: 6 }}>
                                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, height: '100%' }}>
@@ -227,10 +227,10 @@ const AboutForm: React.FC<AboutFormProps> = ({ open, onClose, onSubmit, about })
                             </Box>
                             <Grid container spacing={3}>
                                 <Grid size={12}>
-                                    <TextField fullWidth label="Biography Title" name="bioTitle" value={formData.bioTitle || ''} onChange={handleInputChange} required />
+                                    <TextField fullWidth label="Biography Title" name="bioTitle" value={formData.bioTitle || ''} onChange={handleInputChange} />
                                 </Grid>
                                 <Grid size={12}>
-                                    <TextField fullWidth label="Biography Content" name="bioContent" value={formData.bioContent || ''} onChange={handleInputChange} multiline rows={8} required />
+                                    <TextField fullWidth label="Biography Content" name="bioContent" value={formData.bioContent || ''} onChange={handleInputChange} multiline rows={8} />
                                 </Grid>
                                 <Grid size={{ xs: 12, sm: 4 }}>
                                     <TextField fullWidth type="number" label="Years Exp" name="yearsExperience" value={formData.yearsExperience || 0} onChange={handleInputChange} />
@@ -245,8 +245,8 @@ const AboutForm: React.FC<AboutFormProps> = ({ open, onClose, onSubmit, about })
                                 <Grid size={12}>
                                     <Typography variant="caption" sx={{ fontWeight: 800, color: 'text.secondary', display: 'block', mb: 1.5, letterSpacing: 1 }}>FOOTER CREDITS</Typography>
                                     <Stack direction="column" spacing={3}>
-                                        <TextField fullWidth label="Footer About Tagline" name="footerAbout" value={formData.footerAbout || ''} onChange={handleInputChange} multiline rows={2} required />
-                                        <TextField fullWidth label="Footer Copyright Text" name="footerCopyright" value={formData.footerCopyright || ''} onChange={handleInputChange} required />
+                                        <TextField fullWidth label="Footer About Tagline" name="footerAbout" value={formData.footerAbout || ''} onChange={handleInputChange} multiline rows={2} />
+                                        <TextField fullWidth label="Footer Copyright Text" name="footerCopyright" value={formData.footerCopyright || ''} onChange={handleInputChange} />
                                     </Stack>
                                 </Grid>
                             </Grid>
