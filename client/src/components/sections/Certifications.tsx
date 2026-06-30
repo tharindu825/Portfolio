@@ -228,7 +228,7 @@ const Certifications: React.FC<{ isAdmin?: boolean }> = ({ isAdmin }) => {
                                 >
                                     <Card sx={{
                                         p: 0,
-                                        height: '600px', // Uniform height
+                                        height: 'auto',
                                         display: 'flex',
                                         flexDirection: 'column',
                                         position: 'relative',
@@ -248,7 +248,7 @@ const Certifications: React.FC<{ isAdmin?: boolean }> = ({ isAdmin }) => {
                                         <Box
                                             sx={{
                                                 width: '100%',
-                                                height: '240px',
+                                                height: '200px',
                                                 bgcolor: alpha(theme.palette.primary.main, 0.05),
                                                 position: 'relative'
                                             }}
@@ -282,7 +282,7 @@ const Certifications: React.FC<{ isAdmin?: boolean }> = ({ isAdmin }) => {
                                             )}
                                         </Box>
 
-                                        <Box sx={{ p: 4, flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+                                        <Box sx={{ p: 4, display: 'flex', flexDirection: 'column' }}>
                                             <Box sx={{ mb: 2 }}>
                                                 <Typography variant="caption" sx={{
                                                     fontWeight: 900,
@@ -311,7 +311,7 @@ const Certifications: React.FC<{ isAdmin?: boolean }> = ({ isAdmin }) => {
 
                                             <Typography variant="h6" sx={{
                                                 fontSize: '1.1rem',
-                                                mb: 3,
+                                                mb: 1.5,
                                                 opacity: 0.8,
                                                 fontWeight: 700,
                                                 color: 'primary.main'
@@ -319,7 +319,7 @@ const Certifications: React.FC<{ isAdmin?: boolean }> = ({ isAdmin }) => {
                                                 {cert.issuingOrganization}
                                             </Typography>
 
-                                            <Box sx={{ mt: 'auto', pt: 2 }}>
+                                            <Box sx={{ mt: 0, pt: 0 }}>
                                                 {cert.credentialUrl && (
                                                     <Button
                                                         component={Link}
