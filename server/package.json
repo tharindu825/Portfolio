@@ -8,7 +8,9 @@
     "dev": "nodemon --exec ts-node src/index.ts",
     "build": "tsc",
     "build:full": "cd ../client && npm install && npm run build && cd ../server && tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backup": "ts-node backup.ts",
+    "restore": "ts-node restore.ts"
   },
   "keywords": [],
   "author": "",
