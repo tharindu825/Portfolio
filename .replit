@@ -1,8 +1,31 @@
-run = "npm start"
+# ============================================================
+#  Replit Configuration — Portfolio (Full-Stack)
+#  Node.js 20 + React/Vite frontend + Express backend
+#  Database: MongoDB Atlas (cloud — no local DB needed)
+# ============================================================
+
+run = "npm run replit:start"
 entrypoint = "server/src/index.ts"
+hidden = [".config", "package-lock.json", "node_modules"]
 
-[languages.javascript]
-manager = "npm"
+# Use Node.js 20 via Nix
+[nix]
+channel = "stable-23_11"
 
+# Port forwarding — Replit will expose port 5000 publicly
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+# ── Deployment configuration ──────────────────────────────
 [deployment]
-run = "npm start"
+run = ["sh", "-c", "npm run replit:start"]
+build = ["sh", "-c", "npm run replit:build"]
+deploymentTarget = "cloudrun"
+
+# ── Language / package manager ────────────────────────────
+[languages.javascript]
+pattern = "**/{*.js,*.jsx,*.ts,*.tsx}"
+
+[languages.javascript.languageServer]
+start = "typescript-language-server --stdio"
